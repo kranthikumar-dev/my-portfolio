@@ -7,6 +7,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "keywords": [
@@ -18,24 +19,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "emailjs-com": "^3.2.0",
+    "ethers": "^6.10.0",
+    "express": "^4.21.2",
     "framer-motion": "^11.15.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.1",
     "react-scripts": "^5.0.1",
-    "express": "^4.21.2",
-    "pg": "^8.11.1",
     "sequelize": "^6.32.1",
-    "cors": "^2.8.5",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
-    "web3": "^4.2.1",
-    "ethers": "^6.10.0"
+    "web3": "^4.2.1"
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.3.0"
   },
   "browserslist": {
     "production": [
@@ -48,5 +49,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://kranthikumar-dev.github.io/my-portfolio"
 }
