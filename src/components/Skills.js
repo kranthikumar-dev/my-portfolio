@@ -1,7 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'PostgreSQL', 'Web3', 'DApps'];
+const skills = [
+  "1. HTML", "2. CSS", "3. JavaScript", "4. React", 
+  "5. Node.js", "6. Express.js", "7. PostgreSQL", "8. Sequelize",
+  "9. CORS", "10. Bcrypt.js", "11. JSON Web Token (JWT)",
+  "12. Web3.js", "13. Ethers.js", "14. DApps", "15. Blockchain", "16. Smart Contracts"
+];
 
 const Skills = () => {
   return (
@@ -13,7 +18,9 @@ const Skills = () => {
         transition={{ type: 'spring', stiffness: 50 }}
       >
         {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <motion.li key={index} whileHover={{ scale: 1.1 }}>
+            {skill}
+          </motion.li>
         ))}
       </motion.ul>
     </section>
